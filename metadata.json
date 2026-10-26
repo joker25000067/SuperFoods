@@ -1,0 +1,6 @@
+{
+  "name": "Factory Record System",
+  "description": "Simple 100% offline factory management and record keeping system for small factories with customizable items, inventory, sales, production, and accounts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

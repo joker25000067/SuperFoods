@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="none" stroke="#334155" stroke-width="4" stroke-opacity="0.6" />
+
+  <!-- Factory & Gear Composite Graphic -->
+  <g filter="url(#shadow)">
+    <!-- Factory Building Silhouette -->
+    <!-- Chimney 1 & 2 -->
+    <rect x="120" y="150" width="36" height="150" rx="4" fill="url(#goldGrad)" />
+    <rect x="114" y="142" width="48" height="14" rx="3" fill="#fbbf24" />
+
+    <rect x="180" y="190" width="36" height="110" rx="4" fill="url(#goldGrad)" />
+    <rect x="174" y="182" width="48" height="14" rx="3" fill="#fbbf24" />
+
+    <!-- Sawtooth Factory Roof -->
+    <path d="M 100 390 L 100 290 L 170 230 L 170 290 L 240 230 L 240 290 L 310 230 L 310 390 Z" fill="url(#goldGrad)" />
+
+    <!-- Right Modern Wing with Windows -->
+    <path d="M 310 260 L 412 260 L 412 390 L 310 390 Z" fill="#d97706" />
+
+    <!-- Modern Windows -->
+    <rect x="330" y="280" width="24" height="24" rx="4" fill="#0f172a" />
+    <rect x="368" y="280" width="24" height="24" rx="4" fill="#0f172a" />
+    <rect x="330" y="318" width="24" height="24" rx="4" fill="#0f172a" />
+    <rect x="368" y="318" width="24" height="24" rx="4" fill="#0f172a" />
+
+    <!-- Left Windows -->
+    <rect x="130" y="310" width="20" height="28" rx="3" fill="#0f172a" />
+    <rect x="200" y="310" width="20" height="28" rx="3" fill="#0f172a" />
+    <rect x="270" y="310" width="20" height="28" rx="3" fill="#0f172a" />
+
+    <!-- Factory Entrance Gate -->
+    <path d="M 215 390 L 215 354 A 20 20 0 0 1 255 354 L 255 390 Z" fill="#0f172a" />
+
+    <!-- Base Platform -->
+    <rect x="80" y="390" width="352" height="16" rx="4" fill="#fbbf24" />
+
+    <!-- High-Tech Gear badge in upper right -->
+    <g transform="translate(360, 150)">
+      <circle cx="0" cy="0" r="48" fill="#1e293b" stroke="#38bdf8" stroke-width="6" />
+      <circle cx="0" cy="0" r="22" fill="#38bdf8" />
+      <!-- Gear teeth -->
+      <path d="M -6 -56 L 6 -56 L 8 -46 L -8 -46 Z" fill="#38bdf8" />
+      <path d="M -6 56 L 6 56 L 8 46 L -8 46 Z" fill="#38bdf8" />
+      <path d="M -56 -6 L -56 6 L -46 8 L -46 -8 Z" fill="#38bdf8" />
+      <path d="M 56 -6 L 56 6 L 46 8 L 46 -8 Z" fill="#38bdf8" />
+      <path d="M -40 -40 L -31 -49 L -24 -42 L -33 -33 Z" fill="#38bdf8" />
+      <path d="M 40 40 L 31 49 L 24 42 L 33 33 Z" fill="#38bdf8" />
+      <path d="M -40 40 L -49 31 L -42 24 L -33 33 Z" fill="#38bdf8" />
+      <path d="M 40 -40 L 49 -31 L 42 -24 L 33 -33 Z" fill="#38bdf8" />
+    </g>
+
+    <!-- Subtitle / Brand Badge Indicator -->
+    <rect x="146" y="420" width="220" height="24" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
+    <text x="256" y="437" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#fbbf24" text-anchor="middle" letter-spacing="2">FACTORY PRO</text>
+  </g>
+</svg>
